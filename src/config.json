@@ -1,16 +1,16 @@
 {
     "api": {
-        "id": null,
-        "worker-id": null
+        "id": "B6BBD10A",
+        "worker-id": "joe"
     },
     "http": {
-        "enabled": false,
+        "enabled": true,
         "host": "127.0.0.1",
-        "port": 0,
+        "port": 4321,
         "access-token": null,
         "restricted": true
     },
-    "autosave": true,
+    "autosave": false,
     "background": false,
     "colors": true,
     "title": true,
@@ -20,9 +20,8 @@
         "mode": "auto",
         "1gb-pages": false,
         "rdmsr": true,
-        "wrmsr": true,
+        "wrmsr": false,
         "cache_qos": false,
-        "numa": true,
         "scratchpad_prefetch_mode": 1
     },
     "cpu": {
@@ -33,43 +32,141 @@
         "priority": null,
         "memory-pool": false,
         "yield": true,
-        "max-threads-hint": 100,
-        "asm": true,
         "argon2-impl": null,
+        "argon2": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "cn": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "cn-heavy": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "cn-lite": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "cn-pico": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "cn/upx2": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "ghostrider": [
+            [
+                8,
+                -1
+            ],
+            [
+                8,
+                -1
+            ],
+            [
+                8,
+                -1
+            ],
+            [
+                8,
+                -1
+            ],
+            [
+                8,
+                -1
+            ],
+            [
+                8,
+                -1
+            ],
+            [
+                8,
+                -1
+            ],
+            [
+                8,
+                -1
+            ]
+        ],
+        "rx": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "rx/wow": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "cn-lite/0": false,
         "cn/0": false,
-        "cn-lite/0": false
+        "rx/arq": "rx/wow"
     },
-    "opencl": {
-        "enabled": false,
-        "cache": true,
-        "loader": null,
-        "platform": "AMD",
-        "adl": true,
-        "cn/0": false,
-        "cn-lite/0": false
-    },
-    "cuda": {
-        "enabled": false,
-        "loader": null,
-        "nvml": true,
-        "cn/0": false,
-        "cn-lite/0": false
-    },
-    "donate-level": 1,
-    "donate-over-proxy": 1,
     "log-file": null,
+    "donate-level": 0,
+    "donate-over-proxy": 0,
     "pools": [
         {
             "algo": null,
             "coin": null,
-            "url": "donate.v2.xmrig.com:3333",
-            "user": "YOUR_WALLET_ADDRESS",
-            "pass": "x",
+            "url": "pool.supportxmr.com:3333",
+            "user": "46UxNFuGM2E3UwmZWWJicaRPoRwqwW4byQkaTHkX8yPcVihp91qAVtSFipWUGJJUyTXgzSqxzDQtNLf2bsp2DX2qCCgC5mg.B6BBD10A",
+            "pass": "joe",
             "rig-id": null,
             "nicehash": false,
-            "keepalive": false,
+            "keepalive": true,
             "enabled": true,
             "tls": false,
+            "sni": false,
             "tls-fingerprint": null,
             "daemon": false,
             "socks5": null,
@@ -77,11 +174,9 @@
             "submit-to-origin": false
         }
     ],
-    "print-time": 60,
-    "health-print-time": 60,
-    "dmi": true,
     "retries": 5,
     "retry-pause": 5,
+    "print-time": 60,
     "syslog": false,
     "tls": {
         "enabled": false,
